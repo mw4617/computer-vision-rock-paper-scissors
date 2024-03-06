@@ -1,22 +1,50 @@
-ls# Computer Vision RPS
+# Rock Paper Scissors AI Game
 
 ##TOC
+1. Description
+2. Installation Instructions
+3. Usage Instructions
+4. File Structure
+5. License Information
 
-##Description
+## 1. Description
 
-####Aim 
-Python program to enable user to play rock paper scissors with computer. 
+This project is a Rock, Paper, Scissors game where a human user plays against an AI. There is two versions to the game. One simplfied version ( manual_rps.py ) where user enters the selected hand gesture throught the command line when prompted and more advanced (camera_rps.py) version where user literally plays rock paper scissors game, making appriopriate hand gestures against the pc. This more advanced version of the game uses a camera to capture the user's hand gestures, classifies them as rock, paper, or scissors, and generates a computer response based on the gesture. It incorporates machine learning models to improve gesture recognition accuracy, including separate models for different lighting conditions. This project aims to demonstrate the application of computer vision and machine learning in creating interactive applications. Through this project, I learned about model training (teachable machine learning), image preprocessing, and integrating Python scripts with real-time video input.
 
-####General Info
-Using teachable machine learning a keras model was trained to to recognise rock paper and scissors based on webcam input of myself. 
+## 2. Installation Instructions
+To set up the Rock Paper Scissors AI Game, follow these steps:
+- Ensure Python 3.x is installed on your system.
+- Install necessary libraries using pip:
+  ```
+  pip install opencv-python keras numpy
+  ```
+- Clone the repository or download the game files to your local machine.
 
-##Instalation Instruction
+## 3. Usage Instructions
+To play the game, run the script from the command line:
+```
+python camera_rps.py --rounds 5 --lighting daylight
+```
+Options:
+- `--rounds` specifies the number of game rounds (default is 3).
+- `--lighting` sets the lighting condition (`daylight`, `artificial`, `unspecified`). If unspecified AI model will try classify itself the lighting conditions, although beware this is not recommended and give flawed results.
 
-##Usage Instruction
-Run the manual_rps.py file to play the simplified version of game without webcam.
+## 4. File Structure
+The project structure is as follows:
+- `manual_rps.py`: The main game script simplified command prompt input (manual) version.
+- `camera_rps.py`: The main game script AI version.
+- `keras_model.h5`: Pre-trained model for gesture recognition no 1.
+- `keras_model_2.h5`: Pre-trained model for gesture recognition no 2.
+- `keras_model_3.h5`: Pre-trained model for gesture recognition no 3.
+- `keras_model_4.h5`: Pre-trained model for gesture recognition no 4.
+- `keras_model_5.h5`: Pre-trained model for gesture recognition no 5.
+- `keras_model_lighting_1.h5`: Model for lighting condition classification no 1.
+- `keras_model_lighting_2.h5`: Model for lighting condition classification no 2.
+- `labels.txt`: labels and their numeric representation for the hand gesture classification model
+- `labels_lighting.txt`: labels and their numeric representation for the lighting model
+- `README.md `: this manual
 
-##File structure of Project
-Files keras_model.h5 and labels.txt represent the AI model and have been downloaded from teachable machine learning. File manual_rps.py contains the script which user can use to play rock paper scissors with computer, but by wrrting in command line their selection i.e. this a simpler version or a predecessor to rock paper scissors game that use video camera as means of user input.
+- `/data`: Directory containing training data (if applicable).
 
-##License Information
+## 5. License Information
 Free to download and play with, but not to edit and republish without my explicit consent.

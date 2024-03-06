@@ -44,7 +44,5 @@ The project structure is as follows:
 - `labels_lighting.txt`: labels and their numeric representation for the lighting model
 - `README.md `: this manual
 
-- `/data`: Directory containing training data (if applicable).
-
 ## 5. License Information
 Free to download and play with, but not to edit and republish without my explicit consent.

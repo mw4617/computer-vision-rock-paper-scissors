@@ -29,6 +29,8 @@ Options:
 - `--rounds` specifies the number of game rounds (default is 3).
 - `--lighting` sets the lighting condition (`daylight`, `artificial`, `unspecified`). If unspecified AI model will try classify itself the lighting conditions, although beware this is not recommended and give flawed results.
 
+Once the game has started simply show the right hand shape to camera and press q on the keyboard. Follow the onscreen instructions.
+
 ## 4. File Structure
 The project structure is as follows:
 - `manual_rps.py`: The main game script simplified command prompt input (manual) version.

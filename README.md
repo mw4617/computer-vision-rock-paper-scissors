@@ -16,7 +16,7 @@ To set up the Rock Paper Scissors AI Game, follow these steps:
 - Ensure Python 3.x is installed on your system.
 - Install necessary libraries using pip:
   ```
-  pip install opencv-python keras numpy
+  pip install opencv-python keras numpy click
   ```
 - Clone the repository or download the game files to your local machine.
 
